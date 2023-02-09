@@ -1,0 +1,135 @@
+#signup_body {
+  background-image: url("bg_register.png");
+  background-size: cover;
+  cursor: default;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 300vh;
+}
+
+#signup_body>main {
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#signup_body>main>form>div {
+  width: 30%;
+}
+
+
+#signup_body>h2 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+main>form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main>form>div {
+  width: 50%;
+}
+
+
+/* Input */
+
+
+.signup_inputs {
+  padding: 5px;
+  width: 20vw;
+  transition: 0.4s;
+  transition-timing-function: ease;
+}
+
+
+.signup_inputs[type=text] {
+  display: block;
+  margin: 10px 3px 10px 3px;
+}
+
+.signup_inputs[type=email] {
+  display: block;
+  margin: 10px 3px 10px 3px;
+}
+
+.signup_inputs[type=date] {
+  display: block;
+  margin: 10px 3px -20px 3px;
+}
+
+.signup_inputs[type=radio] {
+  cursor: pointer;
+  width: auto;
+  margin: 10px 10px 5px 3px;
+}
+
+#num1 {
+  border: none;
+  height: 15px;
+  width: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  background-color: white;
+  top: 1px;
+  font-weight: bold;
+}
+
+.number {
+  display: inline;
+  margin: 10px 3px 10px 3px;
+}
+
+#mnum {
+  padding-left: 31px;
+  margin-left: -40px;
+}
+
+#signup_body>select {
+  display: block;
+  padding: 5px;
+  margin: 10px 3px 10px 3px;
+  width: 20vw;
+}
+
+.signup_inputs[type=checkbox] {
+  cursor: pointer;
+  margin: 0 20px;
+  height: 20px;
+}
+
+#footer-link {
+  color: rgb(160, 158, 158);
+}
+
+#buttons {
+  display: flex;
+}
+
+#buttons>button {
+  width: 100%;
+  color: blue;
+  font-weight: bold;
+  border: 1px solid blue;
+  margin: 20px 10px 5px 3px;
+  height: 40px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+#buttons>button:hover {
+  border: 1px solid black;
+  cursor: pointer;
+  color: white;
+}
+
+#submit:hover {
+  background-color: green;
+}
+
+#reset:hover {
+  background-color: red;
+}

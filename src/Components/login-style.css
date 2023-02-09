@@ -1,0 +1,157 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.body_login>hr {
+    border: none;
+    margin: 2vh;
+}
+
+#logo-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(logo-icon.png);
+    transform: translate(-5px);
+}
+
+.body_login {
+    background: linear-gradient(45deg, magenta, #f857a6, #ff5858, #4776e6, blue);
+    animation: gradient 15s linear infinite;
+    background-size: 400% 400%;
+    height: 100%;
+    padding: 20vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.body_login>table {
+    height: 361px;
+    border-radius: 2px;
+    width: 20%;
+    padding: 10px;
+    background-color: white;
+}
+
+#login-text {
+    cursor: default;
+    font-weight: bold;
+    width: 310px;
+}
+
+#signin-head {
+    padding: 15px;
+    text-align: center;
+    cursor: default;
+}
+
+label {
+    display: block;
+    color: lightgrey;
+    transform: translateY(-4vh);
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+input:focus+label,
+input:valid+label {
+    color: black;
+    transform: translateY(-6vh);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.body_login>input {
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    transition: width 1s;
+    transition-timing-function: ease;
+}
+
+#password {
+    margin-top: 2vh;
+}
+
+.body_login>input:focus,
+.body_login>input:valid {
+    background-color: white;
+    width: 95%;
+    outline: none;
+    background: 2s gradient ease;
+    animation-name: gradient;
+    border-bottom: 1px solid orange;
+}
+
+.body_login>button {
+    cursor: pointer;
+}
+
+#login {
+    height: 27px;
+    width: 20%;
+    margin-top: -1vh;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: red;
+}
+
+#login:hover {
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    border-radius: none;
+    background-color: rgb(216, 1, 1);
+    box-shadow: none;
+}
+
+#social-td {
+    vertical-align: top;
+    border-left: 1px solid lightgrey;
+    border-left: ridge;
+    padding: 10px;
+}
+
+.social-button {
+    font-size: 15px;
+    font-weight: lighter;
+    height: 46px;
+    width: 301px;
+    background-color: white;
+    margin: 2px;
+    border-color: rgba(211, 211, 211, 0.356);
+    border-width: 1px;
+    border-radius: 2px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+
+.social-img {
+    height: 24px;
+    width: 24px;
+    margin-left: 1px;
+    margin-right: 13px;
+    vertical-align: middle;
+}
+
+.generic_button:hover {
+    background-color: rgba(146, 145, 145, 0.144);
+}
+
+.generic_button:active {
+    background-color: rgba(0, 0, 255, 0.185);
+}

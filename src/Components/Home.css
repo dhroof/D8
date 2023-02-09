@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.home {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url('./landing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.home-text {
+    text-align: center;
+    font-size: 2rem;
+    max-width: 50rem;
+    margin: 3rem;
+    border-radius: 10px;
+    white-space: initial;
+}
+
+.home-text-primary {
+    font-weight: bold;
+    color: black;
+}
+
+.home-text-secondary {
+    font-weight: bold;
+    color: #ffb4b2;
+}
+
+.home-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    padding: 0 7rem;
+}
+
+.home-button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: #ffb4b4;
+    color: black;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px;
+}
